@@ -19,6 +19,7 @@ import java.util.ResourceBundle;
 
 public class OrderFoodController implements Initializable {
 
+//    Food quantity order spinner
     @FXML
     private Spinner<Integer> OrderSpinner1,OrderSpinner2,OrderSpinner3,OrderSpinner4,OrderSpinner5,
             OrderSpinner6,OrderSpinner7,OrderSpinner8,OrderSpinner9,OrderSpinner10,OrderSpinner11,OrderSpinner12,
@@ -82,7 +83,8 @@ public class OrderFoodController implements Initializable {
         OrderSpinner17.setValueFactory(svf17);
         OrderSpinner18.setValueFactory(svf18);
     }
-
+//--------------------------------------------------------------------------------------------------------------
+//    tekan button exit terus tutup apps
     public void onExitClick (ActionEvent event) {
 
 //        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -97,6 +99,13 @@ public class OrderFoodController implements Initializable {
 
 
     }
+
+//    Click submit order Button
+    public void SubmitOrderClick(ActionEvent event){
+
+
+    }
+
 
 
 
