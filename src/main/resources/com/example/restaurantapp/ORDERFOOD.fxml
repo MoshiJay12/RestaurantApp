@@ -32,91 +32,91 @@
                     <children>
                         <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="43.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\nasi ayam sedap_thumb.jpg" />
+                                <Image url="@../gambar/nasi ayam sedap_thumb.jpg" />
                             </image></ImageView>
                         <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="246.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Nasi_Goreng_Cili_Kering.jpg" />
+                                <Image url="@../gambar/Nasi_Goreng_Cili_Kering.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="448.0" layoutY="44.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-526389263-612x612.jpg" />
+                                <Image url="@../gambar/istockphoto-526389263-612x612.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="648.0" layoutY="44.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\1.jpg" />
+                                <Image url="@../gambar/1.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="850.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Nasi_Dagang.jpg" />
+                                <Image url="@../gambar/Nasi_Dagang.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="43.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Mee_Goreng_Daging_2_1x1_xK7VY3D.jpg" />
+                                <Image url="@../gambar/Mee_Goreng_Daging_2_1x1_xK7VY3D.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="149.0" layoutX="246.0" layoutY="297.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\mee-kari.jpg" />
+                                <Image url="@../gambar/mee-kari.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="149.0" layoutX="448.0" layoutY="297.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\16456824355_bd8f95fa66_c.jpg" />
+                                <Image url="@../gambar/16456824355_bd8f95fa66_c.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="150.0" layoutX="43.0" layoutY="562.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Lontong-1-1-1.jpg" />
+                                <Image url="@../gambar/Lontong-1-1-1.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="246.0" layoutY="562.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\laksam.jpg" />
+                                <Image url="@../gambar/laksam.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="448.0" layoutY="562.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1310708373-612x612 (1).png" />
+                                <Image url="@../gambar/istockphoto-1310708373-612x612 (1).png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="648.0" layoutY="562.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1301516741-612x612.jpg" />
+                                <Image url="@../gambar/istockphoto-1301516741-612x612.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="448.0" layoutY="820.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\APPrestoran\gambar\nasi ayam sedap_thumb.jpg" />
+                                <Image url="@../gambar/nasi ayam sedap_thumb.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="43.0" layoutY="1082.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1296798639-612x612.jpg" />
+                                <Image url="@../gambar/istockphoto-1296798639-612x612.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="155.0" layoutX="246.0" layoutY="820.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\img_2123_edited-480x640.jpg" />
+                                <Image url="@../gambar/img_2123_edited-480x640.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="153.0" layoutX="448.0" layoutY="820.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\7-4.png" />
+                                <Image url="@../gambar/7-4.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="248.0" layoutY="1082.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\6949287063_20c70171da_b.jpg" />
+                                <Image url="@../gambar/6949287063_20c70171da_b.jpg" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="43.0" layoutY="820.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\png_20220720_152934_0000-1-1-1.png" />
+                                <Image url="@../gambar/png_20220720_152934_0000-1-1-1.png" />
                             </image>
                         </ImageView>
                         <Label alignment="TOP_CENTER" layoutX="43.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Ayam">
@@ -282,7 +282,7 @@
                         </Label>
                         <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="449.0" layoutY="1082.0" pickOnBounds="true">
                             <image>
-                                <Image url="C:\Users\Asus\IdeaProjects\APPrestoran\gambar\rsmy.jpg" />
+                                <Image url="@../gambar/rsmy.jpg" />
                             </image>
                         </ImageView>
                         <Label layoutX="458.0" layoutY="1244.0" text="Roti Naan Cheese">
