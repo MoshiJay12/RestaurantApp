@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.MenuController">
+
+    <children>
+        <AnchorPane prefHeight="1500.0" prefWidth="174.0" style="-fx-background-color: #9c27b0;">
+            <children>
+                <Label alignment="CENTER" layoutY="26.0" prefHeight="35.0" prefWidth="174.0" text="RESTAURANT" textFill="#fffdfd">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font></Label>
+                <Label alignment="CENTER" layoutY="61.0" prefHeight="24.0" prefWidth="174.0" text="MENU" textFill="WHITE">
+                    <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                    </font></Label>
+            <Button layoutX="41.0" layoutY="125.0" mnemonicParsing="false" onAction="#switchToBOOKTABLE" prefHeight="35.0" prefWidth="92.0" text="Book Table" />
+            <Button fx:id="Exit" layoutX="41.0" layoutY="175.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="35.0" prefWidth="92.0" text="Exit" />
+
+            </children></AnchorPane>
+        <ScrollPane layoutX="173.0" prefHeight="810.0" prefWidth="1142.0">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <content>
+                <AnchorPane prefHeight="1501.0" prefWidth="1126.0">
+                    <children>
+                        <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="43.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\nasi ayam sedap_thumb.jpg" />
+                            </image></ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="246.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Nasi_Goreng_Cili_Kering.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="448.0" layoutY="44.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-526389263-612x612.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="648.0" layoutY="44.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\1.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="850.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Nasi_Dagang.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="43.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Mee_Goreng_Daging_2_1x1_xK7VY3D.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="149.0" layoutX="246.0" layoutY="297.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\mee-kari.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="149.0" layoutX="448.0" layoutY="297.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\16456824355_bd8f95fa66_c.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="150.0" layoutX="43.0" layoutY="562.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\Lontong-1-1-1.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="246.0" layoutY="562.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\laksam.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="448.0" layoutY="562.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1310708373-612x612 (1).png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="648.0" layoutY="562.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1301516741-612x612.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="165.0" layoutX="448.0" layoutY="820.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\APPrestoran\gambar\nasi ayam sedap_thumb.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="43.0" layoutY="1082.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\istockphoto-1296798639-612x612.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="155.0" layoutX="246.0" layoutY="820.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\img_2123_edited-480x640.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="153.0" layoutX="448.0" layoutY="820.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\7-4.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="248.0" layoutY="1082.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\6949287063_20c70171da_b.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="149.0" fitWidth="152.0" layoutX="43.0" layoutY="820.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\png_20220720_152934_0000-1-1-1.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="TOP_CENTER" layoutX="43.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Ayam">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="43.0" layoutY="234.0" prefHeight="24.0" prefWidth="149.0" text="RM 8.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="249.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Goreng">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="249.0" layoutY="234.0" prefHeight="24.0" prefWidth="149.0" text="RM 7.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="450.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Kerabu">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="450.0" layoutY="234.0" prefHeight="24.0" prefWidth="149.0" text="RM 10.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="651.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Kukus">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="651.0" layoutY="234.0" prefHeight="24.0" prefWidth="149.0" text="RM 9.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="850.0" layoutY="210.0" prefHeight="24.0" prefWidth="149.0" text="Nasi Dagang">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="850.0" layoutY="234.0" prefHeight="24.0" prefWidth="149.0" text="RM 8.50">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="43.0" layoutY="462.0" prefHeight="24.0" prefWidth="149.0" text="Mi Goreng">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="43.0" layoutY="486.0" prefHeight="24.0" prefWidth="149.0" text="RM 6.50">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="249.0" layoutY="462.0" prefHeight="24.0" prefWidth="149.0" text="Mi Kari">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="249.0" layoutY="486.0" prefHeight="24.0" prefWidth="149.0" text="RM 6.30">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="450.0" layoutY="462.0" prefHeight="24.0" prefWidth="149.0" text="Kuey Teow Goreng">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="460.0" layoutY="486.0" prefHeight="24.0" prefWidth="129.0" text="RM 7.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="88.0" layoutY="716.0" prefHeight="35.0" prefWidth="59.0" text="Lontong">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="76.0" layoutY="751.0" prefHeight="35.0" prefWidth="84.0" text="RM 7.50">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="287.0" layoutY="723.0" prefHeight="17.0" prefWidth="73.0" text="Laksam">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="502.0" layoutY="723.0" text="Laksa">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="692.0" layoutY="723.0" text="Tom Yam">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="77.0" layoutY="984.0" text="Satay Ayam">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="282.0" layoutY="984.0" text="Satay Ikan">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="476.0" layoutY="984.0" text="Satay Daging">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="82.0" layoutY="1244.0" text="Roti Canai">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label layoutX="286.0" layoutY="1244.0" text="Roti Boom">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font></Label>
+                        <Label alignment="CENTER" layoutX="274.0" layoutY="751.0" prefHeight="17.0" prefWidth="98.0" text="RM 6.80">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="491.0" layoutY="751.0" prefHeight="17.0" prefWidth="67.0" text="RM 6.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="700.0" layoutY="751.0" text="RM 7.90">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="94.0" layoutY="1013.0" text="RM 2.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="286.0" layoutY="1013.0" prefHeight="17.0" prefWidth="70.0" text="RM 2.50">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="492.0" layoutY="1013.0" prefHeight="17.0" prefWidth="65.0" text="RM 3.00">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font></Label>
+                        <Label alignment="TOP_CENTER" layoutX="92.0" layoutY="1272.0" prefHeight="35.0" prefWidth="51.0" text="RM 2.20">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="298.0" layoutY="1272.0" prefHeight="35.0" prefWidth="51.0" text="RM 2.30">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="149.0" fitWidth="151.0" layoutX="449.0" layoutY="1082.0" pickOnBounds="true">
+                            <image>
+                                <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\gambar\rsmy.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="458.0" layoutY="1244.0" text="Roti Naan Cheese">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutX="499.0" layoutY="1272.0" prefHeight="35.0" prefWidth="51.0" text="RM 3.50">
+                            <font>
+                                <Font name="JetBrains Mono Medium" size="12.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </ScrollPane>
+
+    </children>
+</AnchorPane>

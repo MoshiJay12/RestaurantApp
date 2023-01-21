@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="554.0" style="-fx-background-color: #9c27b0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.Submit_Id_Controller">
+    <children>
+        <Label layoutX="174.0" layoutY="45.0" text="Order food" textFill="WHITE">
+            <font>
+                <Font name="Algerian" size="36.0" />
+            </font></Label>
+        <AnchorPane layoutY="113.0" prefHeight="200.0" prefWidth="554.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Label fx:id="TableView" alignment="TOP_LEFT" layoutX="175.0" layoutY="31.0" prefHeight="29.0" prefWidth="207.0" text="Enter Customer ID:">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="Input_ID" layoutX="128.0" layoutY="71.0" prefHeight="29.0" prefWidth="300.0" />
+            <Button layoutX="253.0" layoutY="126.0" mnemonicParsing="false" onAction="#SubmitID" text="Submit" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
