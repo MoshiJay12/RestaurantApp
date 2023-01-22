@@ -8,20 +8,18 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.scene.input.*;
 import java.net.URL;
-
 import java.io.IOException;
 import java.util.ResourceBundle;
-import java.util.Scanner;
+
 
 
 public class OrderFoodController implements Initializable {
 @FXML
     Stage stage;
     Scene scene;
+
     //    Food quantity order spinner
     @FXML
 
@@ -108,8 +106,6 @@ public class OrderFoodController implements Initializable {
     }
 
     //    Click submit order Button
-
-
     public void SubmitOrderClick(ActionEvent event) throws IOException {
 //
 //        int  qtt;
@@ -277,9 +273,6 @@ public class OrderFoodController implements Initializable {
     public void ViewBillClick(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("VIEWBILL.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene = new Scene(root);
-//        stage.setScene(scene);
-//        stage.show();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.show();
