@@ -45,7 +45,6 @@ public class APPS extends Application {
             System.out.println("You succesfully Exit!!");
             stage.close();
 
-
         }
 
     }
