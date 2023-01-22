@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="282.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.StartController">
+    <children>
+        <Button fx:id="StaffLoginClick" layoutX="137.0" layoutY="49.0" mnemonicParsing="false" onAction="#StaffClick" prefHeight="57.0" prefWidth="123.0" text="Staff Login" />
+      <Button fx:id="CustomerButtonClick" layoutX="137.0" layoutY="129.0" mnemonicParsing="false" onAction="#CustomerClick" prefHeight="57.0" prefWidth="123.0" text="Customer" />
+    </children>
+</AnchorPane>

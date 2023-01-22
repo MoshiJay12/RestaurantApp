@@ -23,7 +23,7 @@ public class APPS extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(APPS.class.getResource("RESTAURANT.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("LOGIN.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("STARTAPPS.fxml"));
         Scene scene = new Scene(root, 397, 282);
         stage.setTitle("Hello! Welcome To Our Restaurant!!");
         stage.setScene(scene);
@@ -34,85 +34,101 @@ public class APPS extends Application {
         });
     }
 //------------------------------------------------------
+//
+//    @FXML
+//    private TextField ID;
+//
+//    @FXML
+//    private PasswordField Pass;
+//
+//
+//    @FXML
+//
+//    public User user;
+//    private User getAuthenticatedUser(String id, String password) {
+//        User user = null;
+//
+//        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
+//        final String USERNAME = "CatDBuser";
+//        final String PASSWORD = "CatDBpassword";
+//
+//        try{
+//            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+//            System.out.println("Successfully connect");
+//            // Connected to database successfully...
+//
+//            Statement stmt = conn.createStatement();
+//            String sql = "SELECT * FROM users WHERE name=? AND password=?";
+//            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+//            preparedStatement.setString(1, id);
+//            preparedStatement.setString(2, password);
+//
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//
+//            if (resultSet.next()) {
+//                user = new User();
+//                user.id = resultSet.getString("name");
+//                user.password = resultSet.getString("password");
+//            }
+//
+//            stmt.close();
+//            conn.close();
+//
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }
+//        return user;
+//    }
+//    public static void main(String[] args) {
+//        APPS loginForm = new APPS();
+//        User user = loginForm.user;
+//        launch();
+//        if (user != null) {
+//            System.out.println("Successful Authentication of: " + user.id);
+//        }
+//        else {
+//            System.out.println("Authentication canceled");
+//        }
+//    }
+//
+//    Scene scene;
+//    Stage stage;
+//    private Parent root;
+//    @FXML
+//    private void LoginClick(ActionEvent event) throws IOException {
+//        String id = ID.getText();
+//        String password =Pass.getText();
+//        user= getAuthenticatedUser(id,password);
+//
+//        if (user != null) {
+//            Parent root= FXMLLoader.load(getClass().getResource("RESTAURANT.fxml"));
+//            stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+//            scene = new Scene(root);
+//            stage.setScene(scene);
+//            stage.show();
+//        }
+//        else {
+//            System.out.println("email or password invalid!! try again..");
+//        }
+//
+//    }
+//@FXML
+//Stage scene;
+//    Scene scene;
+//    private Parent root;
+//
+//    public void StaffLoginClick(ActionEvent event) throws IOException
+//    {
+//        Parent root= FXMLLoader.load(getClass().getResource("LOGIN.fxml"));
+//        stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
-    @FXML
-    private TextField ID;
-
-    @FXML
-    private PasswordField Pass;
 
 
-    @FXML
 
-    public User user;
-    private User getAuthenticatedUser(String id, String password) {
-        User user = null;
-
-        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
-        final String USERNAME = "CatDBuser";
-        final String PASSWORD = "CatDBpassword";
-
-        try{
-            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            System.out.println("Successfully connect");
-            // Connected to database successfully...
-
-            Statement stmt = conn.createStatement();
-            String sql = "SELECT * FROM users WHERE name=? AND password=?";
-            PreparedStatement preparedStatement = conn.prepareStatement(sql);
-            preparedStatement.setString(1, id);
-            preparedStatement.setString(2, password);
-
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            if (resultSet.next()) {
-                user = new User();
-                user.id = resultSet.getString("name");
-                user.password = resultSet.getString("password");
-            }
-
-            stmt.close();
-            conn.close();
-
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        return user;
-    }
-    public static void main(String[] args) {
-        APPS loginForm = new APPS();
-        User user = loginForm.user;
-        launch();
-        if (user != null) {
-            System.out.println("Successful Authentication of: " + user.id);
-        }
-        else {
-            System.out.println("Authentication canceled");
-        }
-    }
-
-    Scene scene;
-    Stage stage;
-    private Parent root;
-    @FXML
-    private void LoginClick(ActionEvent event) throws IOException {
-        String id = ID.getText();
-        String password =Pass.getText();
-        user= getAuthenticatedUser(id,password);
-
-        if (user != null) {
-            Parent root= FXMLLoader.load(getClass().getResource("RESTAURANT.fxml"));
-            stage =(Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-            System.out.println("dispose");
-        }
-        else {
-            System.out.println("email or password invalid!! try again..");
-        }
-
-    }
     public void onExitClick(Stage stage) {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
