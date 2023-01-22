@@ -21,7 +21,7 @@ public class Submit_Id_Controller {
     Scene scene;
 
     public  TextField Input_ID;
-    public int id;
+    public int id, custID;
 
     public void SubmitID(ActionEvent event) throws IOException {
 
@@ -33,11 +33,13 @@ public class Submit_Id_Controller {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+
+            custID = Integer.parseInt(Input_ID.getId());
+
         } else {
             System.out.println("Invalid Customer ID");
         }
 
     }
-
 
 }

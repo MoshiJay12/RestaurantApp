@@ -161,7 +161,7 @@ public class OrderFoodController implements Initializable {
         BillController billController = loader.getController();
 
         billController.displayBills(value1, value2, value3, value4, value5, value6, value7, value8,
-                value9, value10, value11, value12, value13, value14, value15, value16,  value17,  value18);
+                value9, value10, value11, value12, value13, value14, value15, value16, value17, value18);
 
         //Parent root = FXMLLoader.load(getClass().getResource("VIEWBILL.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -170,6 +170,8 @@ public class OrderFoodController implements Initializable {
         stage.show();
 
     }
+
+
 }
 
 
