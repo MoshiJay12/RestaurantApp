@@ -90,15 +90,8 @@ public class OrderFoodController implements Initializable {
 
     //--------------------------------------------------------------------------------------------------------------
 //    tekan button exit terus tutup apps
-    public void onExitClick(ActionEvent event) {
+    public void onExitClick() {
 
-//        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-//        alert.setTitle("Logout");
-//        alert.setHeaderText("You're about to exit!");
-//        alert.setContentText("Are you sure you want to exit?");
-//
-//        if (alert.showAndWait().get()== ButtonType.OK) {
-//            stage=(Stage) ScenePane.getScene().getWindow();
         System.out.println("You succesfully Exit!!");
         System.exit(0);
 
@@ -106,7 +99,7 @@ public class OrderFoodController implements Initializable {
     }
 
     //    Click submit order Button
-    public void SubmitOrderClick(ActionEvent event) throws IOException {
+    public void SubmitOrderClick() {
 //
 //        int  qtt;
 //        double total1,total2,total3,total4,total5,total6,total7,total8,total9,total10,total11,total12,
@@ -268,7 +261,6 @@ public class OrderFoodController implements Initializable {
         System.out.println("The order have been submitted");
 
     }
-
 
     public void ViewBillClick(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("VIEWBILL.fxml"));
