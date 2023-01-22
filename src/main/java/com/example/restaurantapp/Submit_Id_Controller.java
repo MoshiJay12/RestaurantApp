@@ -21,7 +21,7 @@ public class Submit_Id_Controller {
     Scene scene;
 
     public  TextField Input_ID;
-    private int id;
+    public int id;
 
     public void SubmitID(ActionEvent event) throws IOException {
 
