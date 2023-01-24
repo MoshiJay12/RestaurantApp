@@ -1,34 +1,35 @@
 package com.example.restaurantapp;
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 import javafx.application.Application;
->>>>>>> origin/main
+//>>>>>>> origin/main
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-=======
+//=======
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
->>>>>>> origin/main
+//>>>>>>> origin/main
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-<<<<<<< HEAD
+import java.sql.*;
+//<<<<<<< HEAD
 
 public class LoginController {
 
-    public LoginController(){
-
-    }
+//    public class LoginController(){
+//
+//    }
 
     @FXML
     Stage stg;
@@ -43,78 +44,7 @@ public class LoginController {
     @FXML
     private PasswordField staffpass;
 
-    public void userLogin (ActionEvent event) throws IOException{
-//        checkLogin();
-        if (staffid.getText().toString().equals("staff") && staffpass.getText().toString().equals("1234")) {
-            wrongLogin.setText("Login Succes!");
-
-            Parent root = FXMLLoader.load(getClass().getResource("StaffView.fxml"));
-            stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stg.setScene(scene);
-            stg.show();
-        }
-
-        else if (staffid.getText().isEmpty() && staffpass.getText().isEmpty()) {
-            wrongLogin.setText("Please enter your data");
-        }
-
-        else {
-            wrongLogin.setText("Wrong staff ID or password!");
-        }
-
-    }
-
-//    private void checkLogin() throws IOException{
-//        LoginStaff lgn = new LoginStaff();
-//        if (staffid.getText().toString().equals("staff") && staffpass.getText().toString().equals("1234")){
-//            wrongLogin.setText("Login Succes!");
-//
-//            //change scene/display staffview lps loginto staff dashboard
-//            //lgn.changeScene("StaffView.fxml");
-////            lgn.getScene().setRoot(lgn);
-//        }
-//
-//        else if (staffid.getText().isEmpty() && staffpass.getText().isEmpty()) {
-//            wrongLogin.setText("Please enter your data");
-//        }
-//
-//        else {
-//            wrongLogin.setText("Wrong staff ID or password!");
-//        }
-//    }
-}
-=======
-import java.sql.*;
-import java.util.Scanner;
-
-public class LoginController {
-
-
-//    @Override
-//    public void start(Stage stage) throws IOException {
-////        FXMLLoader fxmlLoader = new FXMLLoader(APPS.class.getResource("RESTAURANT.fxml"));
-//        Parent root = FXMLLoader.load(getClass().getResource("LOGIN.fxml"));
-//        Scene scene = new Scene(root, 397, 282);
-//        stage.setTitle("Hello! Welcome To Our Restaurant!!");
-//        stage.setScene(scene);
-//        stage.show();
-//        stage.setOnCloseRequest(event -> {
-//            event.consume();
-//            onExitClick(stage);
-//        });
-//    }
-//------------------------------------------------------
-
     @FXML
-    private TextField ID;
-
-    @FXML
-    private PasswordField Pass;
-
-
-    @FXML
-
     public User user;
     private User getAuthenticatedUser(String id, String password) {
         User user = null;
@@ -162,27 +92,33 @@ public class LoginController {
         }
     }
 
-    Scene scene;
-    Stage stage;
-    private Parent root;
-    @FXML
-    private void LoginClick(ActionEvent event) throws IOException {
-        String id = ID.getText();
-        String password =Pass.getText();
-        user= getAuthenticatedUser(id,password);
+    public void userLogin (ActionEvent event) throws IOException{
 
-        if (user != null) {
-            Parent root= FXMLLoader.load(getClass().getResource("RESTAURANT.fxml"));
-            stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+        String id = staffid.getText();
+        String password =staffpass.getText();
+        user= getAuthenticatedUser(id,password);
+//        checkLogin();
+//        if (staffid.getText().toString().equals("staff") && staffpass.getText().toString().equals("1234"))
+        if (user!=null){
+            wrongLogin.setText("Login Succes!");
+
+            Parent root = FXMLLoader.load(getClass().getResource("StaffView.fxml"));
+            stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+            stg.setScene(scene);
+            stg.show();
         }
+
+        else if (staffid.getText().isEmpty() && staffpass.getText().isEmpty()) {
+            wrongLogin.setText("Please enter your data");
+        }
+
         else {
-            System.out.println("email or password invalid!! try again..");
+            wrongLogin.setText("Wrong staff ID or password!");
         }
 
     }
+
     public void onExitClick(Stage stage) {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -200,4 +136,4 @@ public class LoginController {
 }
 
 
->>>>>>> origin/main
+//>>>>>>> origin/main
