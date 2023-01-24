@@ -1,49 +1,50 @@
 package com.example.restaurantapp;
 
+//<<<<<<< HEAD
+//=======
 import javafx.application.Application;
+//>>>>>>> origin/main
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+//<<<<<<< HEAD
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+//=======
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+//>>>>>>> origin/main
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.Scanner;
+//<<<<<<< HEAD
 
 public class LoginController {
 
-
-//    @Override
-//    public void start(Stage stage) throws IOException {
-////        FXMLLoader fxmlLoader = new FXMLLoader(APPS.class.getResource("RESTAURANT.fxml"));
-//        Parent root = FXMLLoader.load(getClass().getResource("LOGIN.fxml"));
-//        Scene scene = new Scene(root, 397, 282);
-//        stage.setTitle("Hello! Welcome To Our Restaurant!!");
-//        stage.setScene(scene);
-//        stage.show();
-//        stage.setOnCloseRequest(event -> {
-//            event.consume();
-//            onExitClick(stage);
-//        });
+//    public class LoginController(){
+//
 //    }
-//------------------------------------------------------
 
     @FXML
-    private TextField ID;
+    Stage stg;
+    Scene scene;
 
     @FXML
-    private PasswordField Pass;
-
+    private Button button;
+    @FXML
+    private Label wrongLogin;
+    @FXML
+    private TextField staffid;
+    @FXML
+    private PasswordField staffpass;
 
     @FXML
-
     public User user;
     private User getAuthenticatedUser(String id, String password) {
         User user = null;
@@ -58,7 +59,7 @@ public class LoginController {
             // Connected to database successfully...
 
             Statement stmt = conn.createStatement();
-            String sql = "SELECT * FROM users WHERE name=? AND password=?";
+            String sql = "SELECT * FROM users WHERE Staff_ID=? AND password=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, id);
             preparedStatement.setString(2, password);
@@ -67,7 +68,7 @@ public class LoginController {
 
             if (resultSet.next()) {
                 user = new User();
-                user.id = resultSet.getString("name");
+                user.id = resultSet.getString("Staff_ID");
                 user.password = resultSet.getString("password");
             }
 
@@ -91,27 +92,33 @@ public class LoginController {
         }
     }
 
-    Scene scene;
-    Stage stage;
-    private Parent root;
-    @FXML
-    private void LoginClick(ActionEvent event) throws IOException {
-        String id = ID.getText();
-        String password =Pass.getText();
-        user= getAuthenticatedUser(id,password);
+    public void userLogin (ActionEvent event) throws IOException{
 
-        if (user != null) {
-            Parent root= FXMLLoader.load(getClass().getResource("RESTAURANT.fxml"));
-            stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+        String id = staffid.getText();
+        String password =staffpass.getText();
+        user= getAuthenticatedUser(id,password);
+//        checkLogin();
+//        if (staffid.getText().toString().equals("staff") && staffpass.getText().toString().equals("1234"))
+        if (user!=null){
+            wrongLogin.setText("Login Succes!");
+
+            Parent root = FXMLLoader.load(getClass().getResource("StaffView.fxml"));
+            stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+            stg.setScene(scene);
+            stg.show();
         }
+
+        else if (staffid.getText().isEmpty() && staffpass.getText().isEmpty()) {
+            wrongLogin.setText("Please enter your data");
+        }
+
         else {
-            System.out.println("email or password invalid!! try again..");
+            wrongLogin.setText("Wrong staff ID or password!");
         }
 
     }
+
     public void onExitClick(Stage stage) {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -127,5 +134,4 @@ public class LoginController {
 
     }
 }
-
 

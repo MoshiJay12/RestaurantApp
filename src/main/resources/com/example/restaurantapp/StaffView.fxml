@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.StaffViewController">
+   <left>
+      <AnchorPane prefHeight="392.0" prefWidth="265.0" style="-fx-background-color: #9C27B0FF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="217.0" fitWidth="199.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bill" alignment="BASELINE_LEFT" layoutX="36.0" layoutY="185.0" mnemonicParsing="false" onAction="#getbill" prefHeight="29.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="Bill ">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="lcust" alignment="BASELINE_LEFT" layoutX="36.0" layoutY="222.0" mnemonicParsing="false" onAction="#getList" prefHeight="32.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="List of Customer">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="tIncome" alignment="BASELINE_LEFT" layoutX="37.0" layoutY="299.0" mnemonicParsing="false" onAction="#getTotal" prefHeight="23.0" prefWidth="172.0" style="-fx-background-color: #E3DCC7;" text="Total Income">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" alignment="BASELINE_LEFT" layoutX="37.0" layoutY="336.0" mnemonicParsing="false" onAction="#userExit" prefHeight="23.0" prefWidth="172.0" style="-fx-background-color: #E3DCC7;" text="Exit">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="mOrder" alignment="BASELINE_LEFT" layoutX="36.0" layoutY="260.0" mnemonicParsing="false" onAction="#MaxOrder" prefHeight="32.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="Maximum Order">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/1828503.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="46.0" text="STAFF DASHBOARD">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="264.0" text="Welcome ">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="308.0" text="This system is only for the staff">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
