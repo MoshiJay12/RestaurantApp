@@ -24,7 +24,7 @@ public class Customer {
         items = 0;
         this.date = "30/08/22";
 //        -------------------------------------------------------------------------------------
-        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
+        final String DB_URL = "jdbc:mysql://localhost:3306/staff";
         final String USERNAME = "CatDBuser";
         final String PASSWORD = "CatDBpassword";
         try {
