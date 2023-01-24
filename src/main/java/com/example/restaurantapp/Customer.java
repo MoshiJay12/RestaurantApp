@@ -1,5 +1,6 @@
 package com.example.restaurantapp;
 
+import java.sql.*;
 import java.util.Scanner;
 
 public class Customer {
@@ -12,6 +13,7 @@ public class Customer {
     Menu[] orders = new Menu[300];
 
     void newCustomer() {
+
         Scanner s = new Scanner(System.in);
         System.out.print("Enter Your Name: ");
         this.name = s.nextLine();
@@ -21,6 +23,31 @@ public class Customer {
         id = idCt;
         items = 0;
         this.date = "30/08/22";
+//        -------------------------------------------------------------------------------------
+        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
+        final String USERNAME = "CatDBuser";
+        final String PASSWORD = "CatDBpassword";
+        try {
+            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+            System.out.println("Successfully connect");
+            // Connected to database successfully...
+
+//            Statement stmt = conn.createStatement();
+            String sql = "insert into customer (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, String.valueOf(phone));
+            preparedStatement.setInt(3, id);
+            preparedStatement.execute();
+
+//            stmt.close();
+            conn.close();
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
 
         Statistics.addCustomer(this);
     }

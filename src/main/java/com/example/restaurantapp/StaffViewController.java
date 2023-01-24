@@ -18,7 +18,7 @@ public class StaffViewController {
 
     // stage represent a window.
     // Scene represent content in the stage
-    @FXML
+
     Stage stg;
     Scene scene;
     @FXML
@@ -68,19 +68,12 @@ public class StaffViewController {
         stg.show();
     }
 
-    @FXML
-    public void userExit(ActionEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Logout");
-        alert.setHeaderText("You're about to exit!");
-        alert.setContentText("Are you sure you want to exit?");
-
-        if (alert.showAndWait().get()== ButtonType.OK){
+@FXML
+    public void userExit(ActionEvent event) {
             System.out.println("You succesfully Exit!!");
-            stg.close();
-        }
-    }
+    System.exit(0);
 
+    }
 
 
 }
