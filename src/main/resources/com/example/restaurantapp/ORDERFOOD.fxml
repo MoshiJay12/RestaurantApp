@@ -19,8 +19,9 @@
                     <font>
                         <Font name="Tahoma Bold" size="14.0" />
                     </font></Label>
-                <Button layoutX="41.0" layoutY="175.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="35.0" prefWidth="92.0" text="Exit" />
+                <Button layoutX="41.0" layoutY="232.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="35.0" prefWidth="92.0" text="Exit" />
             <Button layoutX="41.0" layoutY="123.0" mnemonicParsing="false" onAction="#SubmitOrderClick" prefHeight="35.0" prefWidth="92.0" text="Submit Order" />
+            <Button layoutX="41.0" layoutY="173.0" mnemonicParsing="false" onAction="#ViewBillClick" prefHeight="44.0" prefWidth="92.0" text="View Bill" />
 
             </children></AnchorPane>
         <ScrollPane layoutX="173.0" prefHeight="810.0" prefWidth="1142.0">
