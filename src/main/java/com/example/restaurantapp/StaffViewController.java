@@ -13,6 +13,8 @@ import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class StaffViewController {
 
@@ -32,9 +34,21 @@ public class StaffViewController {
     @FXML
     public Button exit;
 
+    final String DB_URL = "jdbc:mysql://localhost:3306/staff";
+    final String USERNAME = "CatDBuser";
+    final String PASSWORD = "CatDBpassword";
+        try {
+        Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+        System.out.println("Successfully connect");
+        // Connected to database successfully...
+        }
+        catch(Exception e){
+        e.printStackTrace();
+        }
+
     @FXML
     public void MaxOrder(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("BOOKTABLE.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ORDERFOOD.fxml"));
         stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stg.setScene(scene);
@@ -61,7 +75,7 @@ public class StaffViewController {
 
     @FXML
     void getbill(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("BOOKTABLE.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("VIEWBILL.fxml"));
         stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stg.setScene(scene);
