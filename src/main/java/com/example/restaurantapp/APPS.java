@@ -126,9 +126,6 @@ public class APPS extends Application {
 //        stage.show();
 //    }
 
-
-
-
     public void onExitClick(Stage stage) {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

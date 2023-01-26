@@ -13,16 +13,22 @@ import javafx.scene.input.*;
 import java.net.URL;
 
 import java.io.IOException;
+import java.sql.*;
 import java.text.DecimalFormat;
 
 public class BillController {
 
     @FXML
+    Stage stg;
+    Scene scene;
+
+    @FXML
     private Label myLabel1, myLabel2, myLabel3, myLabel4, myLabel5, myLabel6, myLabel7, myLabel8, myLabel9,
             myLabel10, myLabel11, myLabel12, myLabel13, myLabel14, myLabel15, myLabel16, myLabel17,
-            myLabel18, myLabel19, myLabel20;
+            myLabel18, myLabel19, custid;
 
     double tp1, tp2, tp3, tp4, tp5, tp6, tp7, tp8, tp9, tp10, tp11, tp12, tp13, tp14, tp15, tp16, tp17, tp18, totalprice ;
+
 
     public void displayBills(Integer value1, Integer value2, Integer value3, Integer value4, Integer value5,
                              Integer value6, Integer value7, Integer value8, Integer value9, Integer value10,
@@ -97,18 +103,23 @@ public class BillController {
 
     public void onDoneClick(ActionEvent event) {
 
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Food Restaurant");
-        alert.setHeaderText("Your table and orders are secured");
-       alert.setContentText("Thank you and have a nice day !!");
-
-        if (alert.showAndWait().get()== ButtonType.OK) {
+//        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+//        alert.setTitle("Food Restaurant");
+//        alert.setHeaderText("Your table and orders are secured");
+//       alert.setContentText("Thank you and have a nice day !!");
+//
+//        if (alert.showAndWait().get()== ButtonType.OK) {
 
 //            System.out.println("Thank you and have a nice day !!");
             System.exit(0);
-        }
+  //      }
 
 
+    }
+
+    public void displayCustID(String id){
+
+        custid.setText(id);
     }
 
 }
