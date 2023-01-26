@@ -24,7 +24,7 @@ public class Customer {
         items = 0;
         this.date = "30/08/22";
 //        -------------------------------------------------------------------------------------
-        final String DB_URL = "jdbc:mysql://localhost:3306/staff";
+        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
         final String USERNAME = "CatDBuser";
         final String PASSWORD = "CatDBpassword";
         try {
@@ -33,7 +33,7 @@ public class Customer {
             // Connected to database successfully...
 
 //            Statement stmt = conn.createStatement();
-            String sql = "insert into customer (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
+            String sql = "insert into cust (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, String.valueOf(phone));
@@ -52,7 +52,7 @@ public class Customer {
         Statistics.addCustomer(this);
     }
 
-  void updateOrderDetails(int option,int Total) {
+    void updateOrderDetails(int option,int Total) {
         String foodItem =  Menu.items[option - 1];
         double foodPrice = Total * Menu.prices[option - 1];
         Menu m = new Menu(foodItem, foodPrice);
@@ -73,7 +73,7 @@ public class Customer {
     }
 
     void displayCustomerDetails() {
-        System.out.println("********************CUSTOMER DETAILS********************\n");
+        System.out.println("*******CUSTOMER DETAILS*******\n");
         System.out.println("Customer ID:" + id);
         System.out.println("Name: " + name);
         System.out.println("Phone: " + phone);
@@ -84,6 +84,6 @@ public class Customer {
         this.displayOrderDetails();
         System.out.println();
         System.out.println("Total Amount: RM" + order_amt);
-        System.out.println("\n********************************************************");
+        System.out.println("\n********************");
     }
 }

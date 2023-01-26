@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 
 public class OrderFoodController implements Initializable {
-    @FXML
+@FXML
     Stage stage;
     Scene scene;
 
@@ -178,3 +178,4 @@ public class OrderFoodController implements Initializable {
 
     }
 }
+

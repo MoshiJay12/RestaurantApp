@@ -36,13 +36,13 @@ public class Submit_Id_Controller {
 
             orderFoodController.displayID(String.valueOf(id));
 
-            //           Parent root = FXMLLoader.load(getClass().getResource("ORDERFOOD.fxml"));
+ //           Parent root = FXMLLoader.load(getClass().getResource("ORDERFOOD.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
 
-            //           custID = Integer.parseInt(Input_ID.getId());
+ //           custID = Integer.parseInt(Input_ID.getId());
 
 
         } else {

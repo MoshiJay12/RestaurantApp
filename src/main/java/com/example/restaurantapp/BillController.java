@@ -111,8 +111,8 @@ public class BillController {
 //        if (alert.showAndWait().get()== ButtonType.OK) {
 
 //            System.out.println("Thank you and have a nice day !!");
-        System.exit(0);
-        //      }
+            System.exit(0);
+  //      }
 
 
     }
