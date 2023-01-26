@@ -11,7 +11,7 @@
       <Button fx:id="CustomerButtonClick" layoutX="137.0" layoutY="178.0" mnemonicParsing="false" onAction="#CustomerClick" prefHeight="57.0" prefWidth="123.0" text="Customer" />
       <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\Asus\IdeaProjects\RestaurantApp\target\classes\com\example\gambar\Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG-removebg-preview.png" />
+            <Image url="C:\Users\End User\IdeaProjects\RestaurantApp\src\main\resources\com\example\gambar\Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG-removebg-preview.png" />
          </image></ImageView>
       <Label layoutX="126.0" prefHeight="106.0" prefWidth="254.0" text="Welcome to our restaurant!!" textFill="#fdffcf">
          <font>
