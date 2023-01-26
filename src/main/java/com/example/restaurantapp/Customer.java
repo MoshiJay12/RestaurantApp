@@ -33,7 +33,7 @@ public class Customer {
             // Connected to database successfully...
 
 //            Statement stmt = conn.createStatement();
-            String sql = "insert into customers (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
+            String sql = "insert into customer (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, String.valueOf(phone));

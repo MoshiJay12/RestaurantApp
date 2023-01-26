@@ -59,7 +59,7 @@ public class LoginController {
             // Connected to database successfully...
 
             Statement stmt = conn.createStatement();
-            String sql = "SELECT * FROM users WHERE Staff_ID=? AND password=?";
+            String sql = "SELECT * FROM login WHERE Staff_ID=? AND Staff_Password=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, id);
             preparedStatement.setString(2, password);
@@ -69,7 +69,7 @@ public class LoginController {
             if (resultSet.next()) {
                 user = new User();
                 user.id = resultSet.getString("Staff_ID");
-                user.password = resultSet.getString("password");
+                user.password = resultSet.getString("Staff_Password");
             }
 
             stmt.close();

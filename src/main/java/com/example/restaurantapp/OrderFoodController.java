@@ -14,21 +14,24 @@ import javafx.scene.input.*;
 import java.net.URL;
 
 import java.io.IOException;
+import java.sql.*;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
 
 public class OrderFoodController implements Initializable {
-@FXML
+    @FXML
     Stage stage;
     Scene scene;
+
     //    Food quantity order spinner
     @FXML
-
-
     private Spinner<Integer> OrderSpinner1, OrderSpinner2, OrderSpinner3, OrderSpinner4, OrderSpinner5,
             OrderSpinner6, OrderSpinner7, OrderSpinner8, OrderSpinner9, OrderSpinner10, OrderSpinner11, OrderSpinner12,
             OrderSpinner13, OrderSpinner14, OrderSpinner15, OrderSpinner16, OrderSpinner17, OrderSpinner18;
+
+    @FXML
+    public Label labelID;
 
     SpinnerValueFactory<Integer> svf1 =
             new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 10, 0);
@@ -107,13 +110,6 @@ public class OrderFoodController implements Initializable {
 
     }
 
-    //    Click submit order Button
-    public void SubmitOrderClick(ActionEvent event) throws IOException {
-
-        System.out.println("The order have been submitted");
-
-    }
-
     int value1, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11,
             value12, value13, value14, value15, value16, value17, value18;
 
@@ -169,15 +165,16 @@ public class OrderFoodController implements Initializable {
         stage.setScene(new Scene(root));
         stage.show();
 
+        int id;
+        id= Integer.parseInt(labelID.getText());
+
+        billController.displayCustID(String.valueOf(id));
+
     }
 
+    public void displayID (String id){
 
+        labelID.setText(Integer.toString(Integer.parseInt(id)));
+
+    }
 }
-
-
-
-
-
-
-
-

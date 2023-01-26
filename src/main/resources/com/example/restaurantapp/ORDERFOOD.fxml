@@ -20,8 +20,17 @@
                         <Font name="Tahoma Bold" size="14.0" />
                     </font></Label>
                 <Button layoutX="41.0" layoutY="232.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="35.0" prefWidth="92.0" text="Exit" />
-            <Button layoutX="41.0" layoutY="123.0" mnemonicParsing="false" onAction="#SubmitOrderClick" prefHeight="35.0" prefWidth="92.0" text="Submit Order" />
             <Button layoutX="41.0" layoutY="173.0" mnemonicParsing="false" onAction="#ViewBillClick" prefHeight="44.0" prefWidth="92.0" text="View Bill" />
+            <Label layoutX="27.0" layoutY="97.0" prefHeight="27.0" prefWidth="121.0" text="Customer ID:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelID" layoutX="72.0" layoutY="131.0" text="101" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
 
             </children></AnchorPane>
         <ScrollPane layoutX="173.0" prefHeight="810.0" prefWidth="1142.0">
