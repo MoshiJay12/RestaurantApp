@@ -98,7 +98,7 @@ public class BillController {
 
 //        id = custid.getText();
 
-        final String DB_URL = "jdbc:mysql://localhost:3306/staff";
+        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
         final String USERNAME = "CatDBuser";
         final String PASSWORD = "CatDBpassword";
         try {
@@ -108,7 +108,7 @@ public class BillController {
             // Connected to database successfully...
 
 //            Statement stmt = conn.createStatement();
-            String sql = "UPDATE customers SET Cust_Bill=? WHERE Cust_ID=?";
+            String sql = "UPDATE customer SET Cust_Bill=? WHERE Cust_ID=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setDouble(1, totalprice);
             preparedStatement.setString(2, id);
@@ -122,7 +122,9 @@ public class BillController {
         }
 
 
-//        Statistics.totalIncome(this);
+        Statistics.totalIncome(this);
+
+
 
     }
 
@@ -137,7 +139,8 @@ public class BillController {
 //        if (alert.showAndWait().get()== ButtonType.OK) {
 
 //            System.out.println("Thank you and have a nice day !!");
-        System.exit(0);
+//        System.exit(0);
+        System.out.println("done");
         //      }
 
 

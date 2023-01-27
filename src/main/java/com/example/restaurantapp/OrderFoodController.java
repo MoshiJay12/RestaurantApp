@@ -110,6 +110,15 @@ public class OrderFoodController implements Initializable {
 
     }
 
+    public void BackToSubmitID(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("ENTER_CUST_ID.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
     int value1, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11,
             value12, value13, value14, value15, value16, value17, value18;
     int id;
