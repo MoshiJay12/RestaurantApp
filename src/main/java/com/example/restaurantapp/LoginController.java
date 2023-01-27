@@ -49,7 +49,7 @@ public class LoginController {
     private User getAuthenticatedUser(String id, String password) {
         User user = null;
 
-        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
+        final String DB_URL = "jdbc:mysql://localhost:3306/staff";
         final String USERNAME = "CatDBuser";
         final String PASSWORD = "CatDBpassword";
 
@@ -59,7 +59,7 @@ public class LoginController {
             // Connected to database successfully...
 
             Statement stmt = conn.createStatement();
-            String sql = "SELECT * FROM userr WHERE name=? AND password=?";
+            String sql = "SELECT * FROM staffaccount WHERE name=? AND password=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, id);
             preparedStatement.setString(2, password);

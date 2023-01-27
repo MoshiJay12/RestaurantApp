@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.TIncomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9C27B0FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.StaffViewController">
    <left>
       <AnchorPane prefHeight="392.0" prefWidth="265.0" style="-fx-background-color: #9C27B0FF;" BorderPane.alignment="CENTER">
          <children>
@@ -55,11 +54,12 @@
                   <Image url="@../gambar/sales-icon-png-17-removebg-preview.png" />
                </image>
             </ImageView>
-            <Label layoutX="36.0" layoutY="200.0" prefHeight="25.0" prefWidth="72.0" text="Income">
+            <Label layoutX="36.0" layoutY="200.0" prefHeight="25.0" prefWidth="72.0" text="Income : ">
                <font>
                   <Font name="Bell MT Bold" size="16.0" />
                </font>
             </Label>
+            <Label fx:id="showIncome" layoutX="129.0" layoutY="204.0" />
          </children>
       </AnchorPane>
    </right>

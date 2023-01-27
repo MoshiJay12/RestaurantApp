@@ -24,7 +24,7 @@ public class Customer {
         items = 0;
         this.date = "30/08/22";
 //        -------------------------------------------------------------------------------------
-        final String DB_URL = "jdbc:mysql://localhost:3306/catrestaurat";
+        final String DB_URL = "jdbc:mysql://localhost:3306/staff";
         final String USERNAME = "CatDBuser";
         final String PASSWORD = "CatDBpassword";
         try {
@@ -33,7 +33,7 @@ public class Customer {
             // Connected to database successfully...
 
 //            Statement stmt = conn.createStatement();
-            String sql = "insert into cust (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
+            String sql = "insert into customers (Cust_Name, Cust_Phone, Cust_ID) " +"values (?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, String.valueOf(phone));
@@ -59,6 +59,8 @@ public class Customer {
         orders[items] = m;
         order_amt += foodPrice;
         items += 1;
+
+
     }
 
     void displayOrderDetails() {
@@ -85,5 +87,7 @@ public class Customer {
         System.out.println();
         System.out.println("Total Amount: RM" + order_amt);
         System.out.println("\n********************");
+
+
     }
 }

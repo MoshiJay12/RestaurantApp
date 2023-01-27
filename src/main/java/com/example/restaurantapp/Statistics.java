@@ -1,5 +1,9 @@
 package com.example.restaurantapp;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
 public class Statistics {
     static Customer[] listOfCustomers = new Customer[300];
     static int customers = 0;
@@ -52,6 +56,8 @@ public class Statistics {
             }
         }
         return c;
+
+
     }
 
     static double totalIncome() {

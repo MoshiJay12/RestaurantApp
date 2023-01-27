@@ -34,6 +34,8 @@ public class TIncomeController {
     @FXML
     private Button tIncome;
 
+    private
+
     @FXML
     void MaxOrder(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(""));
