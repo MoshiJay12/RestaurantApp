@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.StaffViewController">
+   <left>
+      <AnchorPane prefHeight="413.0" prefWidth="277.0" style="-fx-background-color: #9C27B0FF#9C27B0FF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="191.0" fitWidth="194.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+               <left>
+                  <AnchorPane prefHeight="392.0" prefWidth="265.0" style="-fx-background-color: #9C27B0FF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="217.0" fitWidth="199.0" layoutX="27.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="47.0" layoutY="231.0" text="Label" />
+                        <Button fx:id="bill" alignment="BASELINE_LEFT" layoutX="46.0" layoutY="195.0" mnemonicParsing="false" onAction="#getbill" prefHeight="29.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="Bill ">
+                           <font>
+                              <Font name="Bell MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="lcust" alignment="BASELINE_LEFT" layoutX="46.0" layoutY="232.0" mnemonicParsing="false" onAction="#getList" prefHeight="32.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="List of Customer">
+                           <font>
+                              <Font name="Bell MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tIncome" alignment="BASELINE_LEFT" layoutX="47.0" layoutY="309.0" mnemonicParsing="false" onAction="#getTotal" prefHeight="23.0" prefWidth="172.0" style="-fx-background-color: #E3DCC7;" text="Total Income">
+                           <font>
+                              <Font name="Bell MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="exit" alignment="BASELINE_LEFT" layoutX="47.0" layoutY="346.0" mnemonicParsing="false" onAction="#userExit" prefHeight="23.0" prefWidth="172.0" style="-fx-background-color: #E3DCC7;" text="Exit">
+                           <font>
+                              <Font name="Bell MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="mOrder" alignment="BASELINE_LEFT" layoutX="46.0" layoutY="270.0" mnemonicParsing="false" onAction="#MaxOrder" prefHeight="32.0" prefWidth="173.0" style="-fx-background-color: #E3DCC7;" text="Maximum Order">
+                           <font>
+                              <Font name="Bell MT" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="400.0" prefWidth="339.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="119.0" layoutX="108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/50046.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="36.0" layoutY="200.0" prefHeight="27.0" prefWidth="102.0" text="Customer :">
+                           <font>
+                              <Font name="Bell MT Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="list" layoutX="132.0" layoutY="201.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
